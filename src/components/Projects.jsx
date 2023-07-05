@@ -1,6 +1,6 @@
 import github from '../assets/github.svg'
 import video from '../assets/video.svg'
-
+import browser from '../assets/browser.svg'
 
 const Projects = ()=>{
     return (
@@ -14,7 +14,7 @@ const Projects = ()=>{
             <div className="project-item project-item--1">
                 <h2>Park Me Bike</h2>
                 <p className="project-description">
-                A large part of my life is cycling.  As a final project in my northcoders bootcamp I was able to convince the team to create a cycle parking app.
+                A large part of my life is cycling.  As a final project in my northcoders bootcamp I was able to convince the team to create a cycle parking app. Built with React-Native and Firebase.
                 </p>
                 <h3>User Stories</h3>
                 <ul className="user-stories">
@@ -39,16 +39,25 @@ const Projects = ()=>{
             <p className="project-description">
                 Front end project built with react for a reddit style news website
                 </p>
-
+                <a href='https://github.com/SmagicJones/nc-news-bh' target='_blank'>
+                    <img src={github} className='social-logo'></img></a>
+                <a href='https://bobnews.netlify.app/' target='_blank'>
+                <img src={browser} className='social-logo'></img></a>
+            </div>
+            <div className='project-item project-item--3'>
+            <h2>NC news backend</h2>
+            <p className='project-description'>
+               Back end project using express & PSQL
+            </p>
+            <a href='https://github.com/SmagicJones/nc_news_public' target='_blank'>
+                    <img src={github} className='social-logo'></img></a>
+                <a href='https://nc-news-bh.onrender.com/api/articles' target='_blank'>
+                <img src={browser} className='social-logo'></img></a>
             </div>
         </div>
 
         </section>
         </main>
-
-        Hi
-
-        
         </>
     )
 

@@ -1,12 +1,14 @@
 .about {
-    height: 95vh;
-    margin-top: -32vh;
+    height: 75vh;
+    margin-top: -35vh;
     // padding: 25rem 0;
-    background-image: linear-gradient(
-        to right bottom,
-         rgba($color-primary, 0.4), 
-         rgba($color-secondary, 0.4)),
-         url('../src/assets/rainbow.jpg');
+    // background-image: linear-gradient(
+    //     to right bottom,
+    //      rgba($color-primary, 0.4), 
+    //      rgba($color-secondary, 0.4)),
+    //      url('../src/assets/rainbow.jpg');
+    background-color: $color-primary;
+    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 60vh);
 }
 
 .container {
@@ -14,7 +16,7 @@
     margin: 3px auto;
     display: grid;
     grid-template-rows: 25rem;
-    grid-template-columns: 1fr  25rem ;
+    grid-template-columns: 1fr  25rem;
     grid-gap: 1rem;
     border-radius: 20px;
 }
@@ -27,23 +29,23 @@
     // border-radius: 20px;
     
     &--1 {
-      background-color: #FF9B9B;
-      height: 50vh;
+      // background-color: rgba($color-secondary, 0.2);
+      // height: 50vh;
       border-radius: 20px;
       
       &:hover {
-        background-color:  #FFD6A5;
-        color: $color-grey;
+        // background-color:  rgba($color-primary, 0.2);
+        // color: $color-grey;
       }
     }
      &--2 {
-      background-color: #FFD6A5;
-      height: 50vh;
+      background-color: rgba($color-primary, 0.2);;
+      // height: 50vh;
       display: relative;
       text-align: center;
       border-radius: 20px;
       &:hover {
-        background-color: #FF9B9B;;
+        // background-color: #FF9B9B;;
       }
     }
 
@@ -51,8 +53,17 @@
 
   .me {
     display: inline-block;
-    margin-top: 5rem;
+    margin-top: 1rem;
     width: 20rem;
     height: 20rem;
     border-radius: 100px;
+    border: solid white 3px;
+  }
+
+  .bio {
+    font-size: $default-font-size;
+  }
+
+  .bio-2 {
+    margin-top: 2rem;
   }
