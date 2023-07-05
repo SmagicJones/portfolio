@@ -1,0 +1,62 @@
+.projects {
+    height: 200vh;
+    margin-top: 3vh;
+    background-image: linear-gradient(
+        to right bottom,
+         rgba($color-primary, 0.4), 
+         rgba($color-secondary, 0.4)),
+         url('../src/assets/rainbow.jpg');
+    // background-size: cover;
+}
+
+
+.project-description {
+    font-size: 2rem;
+}
+
+.user-stories {
+    list-style: none;
+}
+
+.project-container {
+    margin-top: 3px;
+    width: 100rem;
+    margin: 3px auto;
+    display: grid;
+    grid-template-rows: 25rem;
+    grid-template-columns: 1fr ;
+    grid-gap: 1rem;
+    border-radius: 20px;
+}
+
+.project-item {
+    padding: 3px;
+    font-size: 3rem;
+    font-family: sans-serif;
+    color: white;
+    // border-radius: 20px;
+    
+    &--1 {
+      background-color: #FF9B9B;
+      height: 90vh;
+      border-radius: 20px;
+      
+      &:hover {
+        background-color:  #FFD6A5;
+        color: $color-grey;
+      }
+    }
+    &--2 {
+        margin-top: 40rem;
+        background-color: #FF9B9B;
+        height: 90vh;
+        border-radius: 20px;
+        
+        &:hover {
+          background-color:  #FFD6A5;
+          color: $color-grey;
+        }
+      }
+     
+
+  }

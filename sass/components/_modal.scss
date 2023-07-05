@@ -1,0 +1,32 @@
+.modal {
+    border-radius: 20px;
+    background-color: $color-primary;
+    width: 50rem;
+    height: 50rem;
+    margin: auto auto;
+   
+    &__logo {
+        margin-top: 2rem;
+        height: 3.5rem;
+    }
+}
+
+.social-logo {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+.modal-footer {
+    margin-top: 5rem;
+}
+
+.close-modal {
+    margin-top: 1rem;
+    margin-left: 46rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 20px;
+}
+
