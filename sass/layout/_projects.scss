@@ -1,17 +1,13 @@
 .projects {
     height: 200vh;
-    margin-top: -20vh;
-    // background-image: linear-gradient(
-    //     to right bottom,
-    //      rgba($color-primary, 0.4), 
-    //      rgba($color-secondary, 0.4)),
-    //      url('../src/assets/rainbow.jpg');
-    background-color: $color-secondary;
+    padding-top: 5vh;
+    background-color: $color-primary;
     background-size: cover;
     background-position: top;
     position: relative;
     background-size: cover;
-    clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+    
+    // clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
 }
 
 
@@ -27,7 +23,12 @@
     margin-top: 3px;
     width: 100rem;
     margin: 3px auto;
-    display: grid;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
     grid-template-rows: 25rem;
     grid-template-columns: 1fr ;
     grid-gap: 1rem;
@@ -35,42 +36,50 @@
 }
 
 .project-item {
-    padding: 3px;
+    flex-direction: row;
+    padding: 10px;
     font-size: 3rem;
     font-family: sans-serif;
     color: $color-grey;
-    // border-radius: 20px;
+	  text-align: justify;
+	  text-align-last: left;
+    margin: 2rem;
+    background-color: $color-secondary;
+   
     
     &--1 {
-      // background-color: #FF9B9B;
-      height: 90vh;
+     
+      height: 40vh;
       border-radius: 20px;
       
+      
       &:hover {
-        // background-color:  #FFD6A5;
-        // color: $color-grey;
+        animation-name: shake;
+        animation-duration: .5s;
+        animation-timing-function: ease-out;
+    
       }
     }
     &--2 {
-        margin-top: 40rem;
-        // background-color: #FF9B9B;
         height: 40vh;
         border-radius: 20px;
         
         &:hover {
-          // background-color:  #FFD6A5;
-          // color: $color-grey;
+          animation-name: shake;
+          animation-duration: .5s;
+          animation-timing-function: ease-out;
         }
       }
     &--3 {
         margin-top: 2rem;
-        // background-color: #FF9B9B;
         height: 40vh;
         border-radius: 20px;
         
         &:hover {
-          // background-color:  #FFD6A5;
-          // color: $color-grey;
+          animation-name: shake;
+          animation-duration: .5s;
+          animation-timing-function: ease-out;
+    
         }
       }
      

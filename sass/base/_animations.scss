@@ -33,3 +33,15 @@
         transform: translateY(0);
     }
 }
+
+@keyframes shake {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(-5deg);}
+	75% {transform: rotate(5deg);}
+	100% {transform: rotate(0deg);}
+}
+
+@keyframes changeColor {
+  from {border-color: $color-primary;}
+  to {border-color: $color-secondary;}
+}
